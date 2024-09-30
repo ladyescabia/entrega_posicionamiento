@@ -74,7 +74,6 @@ header img {
 .padre {
     position: relative;
     margin: 20px;
-    /* width: 90%; */
     height: 200px;
 }
 
@@ -82,14 +81,11 @@ header img {
     position: absolute;
     top: 50%; /* Posición vertical al 50% */
     transform: translateY(-50%); /* Centrado vertical ajustando su propia altura */
-    /* margin-top: 15px; */
 }
 
 .box2 {
     position: absolute;
     right: 0px;
-    /* margin-left: 10%;
-    margin-right: 20px; */
 }
 
 #sidebar {
@@ -119,8 +115,6 @@ div > img {
     width: 170px;
     border-radius: 50%;
 }
-
-
 
 /*CARACTERÍSTICAS*/
 
