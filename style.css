@@ -51,7 +51,7 @@ button{
 /*LANDING PAGE*/
 
 header {
-   padding-bottom: 3px;
+   padding-bottom: 20px;
    position: fixed; top: 0; right: 0; left: 0;
    background-color: var(--secondary-color);
 }
@@ -65,34 +65,62 @@ header img {
 /*CONTENIDO PRINCIPAL*/
 
 .content {
-    border: 2px dotted var(--primary-color);margin-top: 80px;
+    border: 2px dotted var(--primary-color);margin-top: 100px;
     padding: 15px;
 }
 
 /*BARRA LATERAL*/
 
-.sidebar {
-    height: 170px;
+.padre {
+    position: relative;
+    margin: 20px;
+    /* width: 90%; */
+    height: 200px;
+}
+
+.box1 {
+    position: absolute;
+    top: 50%; /* Posición vertical al 50% */
+    transform: translateY(-50%); /* Centrado vertical ajustando su propia altura */
+    /* margin-top: 15px; */
+}
+
+.box2 {
+    position: absolute;
+    right: 0px;
+    /* margin-left: 10%;
+    margin-right: 20px; */
+}
+
+#sidebar {
+    height: 200px;
     width: 200px;
+    padding: 10px;
     background-color: var(--secondary-color);
 }
 
-.flex {
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+#sidebar > h3 {
+    padding-top: 10px;
 }
 
-section > img {
-    height: 170px;
-    width: auto;
+#sidebar > ul {
+    padding-left: 25px;
+    margin-top: 10px;
+    color: var(--background-color);
 }
 
-aside {
+.aside {
     padding: 15px;
     color: var(--background-color);
 }
+
+div > img {
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+}
+
+
 
 /*CARACTERÍSTICAS*/
 
@@ -103,11 +131,16 @@ aside {
     text-align: center;
  }
 
+ span {
+    font-size: 20px;
+}
+
+/* FOOTER */
+
 footer {
-    margin-bottom: 0px;
+    margin-top: 65px;
     padding: 10px;
     color: var(--background-color);
     text-align: center;
-    position: fixed; bottom: 0; right: 0; left: 0;
     background-color: var(--secondary-color);
  }
